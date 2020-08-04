@@ -15,11 +15,11 @@ def take_a_number(line_array, name)
 end
 
 def now_serving(line_array)
-  if line_array.size == 0 
+  if line_array.empty?
     puts "There is nobody waiting to be served!"
   else
   line_array.shift (line_array)
   "Currrently serving #{line_array.shift}."
-end  
+  end  
  end
  
